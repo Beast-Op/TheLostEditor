@@ -3,6 +3,7 @@
  text-decoration: none;
  list-style: none;
  box-sizing: border-box;
+ scroll-behavior: smooth;
 }
 
 body{
@@ -11,6 +12,18 @@ body{
 	width: 100%;
 }
 
+a{
+	text-decoration: none;
+}
+
+.social:hover{
+	background-color: transparent;
+	border:none;
+}
+
+li{
+	list-style: none;
+}
 
 .head{
 	width:100%;
@@ -55,6 +68,9 @@ ul a{
 	font-size: 14px;
 	font-weight: 400px;
 	margin-top: 20px;
+	border-radius: 3px;
+	transition:all 0.3s ease-in-out;
+	
 }
 
 
@@ -175,7 +191,7 @@ word-spacing: 1.5px;
 .hire{
 	background: none;
 	width: 180px;
-	padding: 10px 40px;
+	padding: 12px 40px;
 	box-shadow: none;
 	border: 1px solid #24a19c;
 	border-radius: 10px;
@@ -189,6 +205,32 @@ word-spacing: 1.5px;
 	background: #24a19c;
 	transition:0.3s all ;
 }
+
+.edit{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 240px;
+	margin:auto;
+}
+.hirework{
+background: none;
+	width: 240px;
+	padding: 10px 40px;
+	box-shadow: none;
+	border: 1px solid #24a19c;
+	border-radius: 10px;
+	margin:10px;
+	color:white;
+	font-family: 'Poppins', sans-serif;
+	z-index: 10;
+}
+
+.hirework:hover{
+	background: #24a19c;
+	transition:0.3s all ;
+}
+
+
 
 .man{
 	overflow: hidden;
@@ -301,9 +343,9 @@ h2{
 }
 
 .box:hover{
-	box-shadow: 1px 1px 3px 1px white;
+
 	transform: scale(1.1);
-	transition:0.4s all ease-in-out;
+	transition:all 0.3s ease-in-out;
 }
 
 
@@ -490,6 +532,7 @@ margin-left: 2%;
 	z-index: 10000; 	
 	height: 100vh;
 	text-align: center;
+    display: block!important;
 	top:50px;
 	left:0px;
 	transition:all 0.5s;
@@ -773,6 +816,7 @@ margin: auto;
 	z-index: 10000; 	
 	height: 100vh;
 	text-align: center;
+	display: none;
 	top:50px;
 	left:0px;
 	transition: all 0.4s;
@@ -821,12 +865,24 @@ li{
 
 }
 
+@media(max-width: 800px){
+	.Portfolio{
+  	margin-top:120px;
+  }
+
+}
+
+
 
 @media (max-width:580px){
 
+	.Portfolio{
+		margin-top: 30vh;
+	}
+
 .hire{
-	height: 40%;
-  width: 250px;
+	padding:5px 8px;
+  width: 160px;
 }
 
 .flex_button{
@@ -869,11 +925,12 @@ margin-top:50px;
 }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
+
 
 }
 
@@ -907,12 +964,25 @@ padding:0;
 		margin-bottom: 40px;
 	}
 
+	.hirework{
+padding:4px 10px;
+width:160px;
+	}
+
+	.edit{
+		width:160px;
+	}
+
 
 	.bars{
 		display: block;
 		width: 100%;
 		text-align: center;
 		height: 90vh;
+	}
+
+	.bartab{
+		font-size: 22px;
 	}
 
 
@@ -936,9 +1006,11 @@ padding:0;
 .hire{
 	width:120px;
 	margin: 0 5px;	
+
 	font-size: 12px;
-	padding: 2px 5px;
+	padding: 6px 12px;
 }
+
 
 .title{
 	font-family: 10px;
@@ -954,6 +1026,10 @@ padding:0;
 		font-size: 12px;
 	} 
 
+.hire{
+	padding: 2px 5px;
+	width: 100px;
+}
 
 	.form{
 		margin-left: 20px;

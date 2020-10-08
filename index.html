@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>The Lost Editor</title>
+	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="annu.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -22,12 +23,12 @@
 <nav>
 
 	<ul class="navbar"> 
-		<a href="#"> <li class="hide_nav active">Home</li> </a>
-		<a href="#"> <li class="hide_nav"> About </li> </a>
-		<a href="#"> <li  class="hide_nav"> PortFolio </li> </a>
-		<a href="#"> <li class="hide_nav"> Services</li> </a>
-		<a href="#"> <li class="hide_nav"> Contact</li> </a>
-		<a href="#"> <li class="hide_nav"> Hire Me</li> </a>
+		<a onclick="removenav()" href="#"> <li class="hide_nav active">Home</li> </a>
+		<a onclick="removenav()" href="#about"> <li class="hide_nav"> About </li> </a>
+		<a onclick="removenav()" href="#service"> <li class="hide_nav"> Services</li> </a>
+			<a onclick="removenav()" href="#portfolio"> <li  class="hide_nav"> PortFolio </li> </a>
+		<a onclick="removenav()" href="#contact"> <li class="hide_nav"> Contact</li> </a>
+		<a onclick="removenav()" href="https://www.fiverr.com/share/RVLpV5"> <li class="hide_nav"> Hire Me</li> </a>
 	
 			
 	</ul>
@@ -53,8 +54,8 @@
 		</div>
 
 		<div class="flex_button">
- <button class="hire">Hire Me</button>
-  <button class="hire">Contact Us</button>
+<a href="https://www.fiverr.com/share/RVLpV5"> <button class="hire">Hire Me</button></a>
+ <a href="#contact "> <button class="hire">Contact Us</button> </a>
 </div>
 
 			</div>
@@ -64,13 +65,13 @@
 	<div class="icons">
 	<ul class="remove_margin">
 		<li>
-			<i class="fa fa-facebook fa1"> </i>
+			<a class="social" href="https://www.facebook.com/aniruddh.singh.98622"><i class="fa fa-facebook fa1"> </i> </a>
 		</li>
 		<li>
-			<i class="fa fa-instagram fa1"> </i>
+		<a class="social" href="https://www.instagram.com/the__lost__editor">	<i class="fa fa-instagram fa1"> </i> </a>
 		</li>
 		<li>
-			<i class="fa fa-briefcase fa1"> </i>
+		<a class="social" href="https://www.fiverr.com/share/RVLpV5">	<i class="fa fa-briefcase fa1"> </i> </a>
 		</li>
 	</ul>
 </div>
@@ -80,7 +81,7 @@
 
 </section>
 
-<div class="About">
+<div id="about" class="About">
 <div class="heading_about">
 	<h2 class="aboutt"> ABOUT </h2>
 	<div class="forflex">
@@ -99,7 +100,7 @@
 </div>
 
 
-<div class="servicees">
+<div id="service"  class="servicees">
 <div class="center">
 	<div class="service_content">
 
@@ -136,7 +137,7 @@
 
 
 
-	<h2 class="bartab"> My Learning And Experience  </h2>
+	<h2 id="learn"  class="bartab"> My Learning And Experience  </h2>
 <div class="bars">
 
 	<div class="bar">
@@ -225,7 +226,7 @@
 
 
 
-<div class="Portfolio">
+<div id="portfolio" class="Portfolio">
 	<div class="centerthebar2">
 		<div class="port_title">
 			<h2> PortFolio</h2>
@@ -237,29 +238,28 @@
 <div class="container-fluid">
     <div class="row">
       <div class="column">
-        <img src="images/4.jpg" />
+        <img src="images/s1.jpg" />
         <img src="images/2.jpg" />
-        <img src="images/meteo.jpg" />
+        <img src="images/s2.jpg" />
        
       </div>
       <div class="column">
       <img src="images/dog.jpg" />
         <img src="images/10.jpg" />
-        <img src="images/5.jpg" />
+        <img src="images/s4.jpg" />
       </div>
       <div class="column">
-         <img src="images/12.jpg" />
+         <img src="images/s3.jpg" />
         <img src="images/1111.jpg" />
-        <img src="images/11.jpg" />
+        <img src="images/s6.jpg" />
       </div>
     </div>
   </div>
 
 
-
-
-
-
+<div class="edit">
+<a href="https://www.instagram.com/the__lost__editor"><button class="hirework"> See More </button></a>
+</div>
 	</div>
 </div>
 
@@ -269,7 +269,7 @@
 
 
 
-<section class="contact_us">
+<section id="contact" class="contact_us">
 <div class="contact_title">
 	<h2> Contact Info </h2>
 </div>
@@ -295,11 +295,11 @@
 	    </div>
          <div class="address">
          <span class="heading_text">Phone</span> <br/>
-         <p class="para">9680049561</p>
+         <a href="tel:+919680049561"><p class="para">9680049561</p> </a>
          </div>
 </div>
 
-
+ 	
 
 
 <div class="inline">
@@ -307,9 +307,11 @@
 			<i class="fa fa-envelope call "> </i>
 	    </div>
          <div class="address">
-         <span class="heading_text">Email</span> <br/>
+       <a href="mailto:thelosteditor@gmail.com">  <span class="heading_text">Email</span> </a> <br/>
          <p class="para">
-         	thelosteditor@gmail.com
+         	 <a style="
+         	 cursor:pointer;
+         	" href="mailto:thelosteditor@gmail.com">thelosteditor@gmail.com </a>	  	
          </p>
          </div>
 </div>
@@ -338,13 +340,6 @@
 </section> 
 
  	
-<script type="text/javascript">
-	
-	function show(){	
-		 const element = document.querySelector(".navbar");
-  element.classList.add("navbarshows");
-	};
-</script>
 
 <script src="typed.js"></script>
 
@@ -374,11 +369,19 @@ var typed = new Typed('.apsp', {
   backSpeed:50,
 });
 
+
+function removenav() {
+let aa = document.querySelector(".navbar");
+aa.classList.remove("navbar1");
+
+
+}
+
+
 let menu = document.querySelector(".ewe");
 menu.addEventListener("click" , function(){
 let aa = document.querySelector(".navbar");
 aa.classList.toggle("navbar1");
-
 
 
 
