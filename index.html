@@ -322,15 +322,32 @@
 
 
 
-		<div class="form2">
-			<h2 class="mesage_title"> Message Me</h2>
-			<input type= "text" class="inputs" placeholder="Full Name" /> <br/>
-			<input type= "text" class="inputs inn1" placeholder="Email" /> <br/>
-			<textarea col="" rows="5" placeholder="Your Message" class="text_area"></textarea>
-			<div class="submitbutton">
- <button  class="submit">Submit</button>
+		<form class="form2" action="https://formspree.io/f/mbjpdwre" 
+		method="POST">
 
-</div>
+		>
+			<h2 class="mesage_title"> Message Me</h2>
+			<input name="name" type= "text" class="inputs" placeholder="Full Name"  /> <br/>
+			<input name="email" type= "text" class="inputs inn1" placeholder="Email" required/> <br/>
+			<textarea name="textarea" col="" rows="5" placeholder="Your Message" class="text_area" required></textarea>
+			<div class="submitbutton">
+ <button type="submit" style="margin: auto;
+
+border-color: #24a19c;
+width: 150px;
+background-color: black;
+color: white;
+border:1px solid #24a19c;
+border-radius: 7px;
+height: 30px;" >Submit</button>
+
+</form>
+
+
+
+
+
+
  <div class="submittext"> 
  </div>
 	</div>
